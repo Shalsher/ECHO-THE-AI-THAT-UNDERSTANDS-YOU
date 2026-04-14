@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>ECHO — The AI That Understands You</title>
+  <meta name="description" content="An immersive AI experience that analyzes your behavior in real-time. No login. No data. Just behavior.">
+  <meta name="theme-color" content="#030303">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ECHO — The AI That Understands You">
+  <meta property="og:description" content="This AI already knows you. No login. No data. Just behavior.">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ECHO — The AI That Understands You">
+  <meta name="twitter:description" content="This AI already knows you. Try it.">
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>◉</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══ EFFECT OVERLAYS ═══ -->
+  <div id="scanlines"></div>
+  <div id="flicker-overlay"></div>
+  <div id="glitch-overlay" class="glitch-overlay"></div>
+  <div id="ambient-flicker"></div>
+  <div id="vignette"></div>
+
+  <!-- ═══ CUSTOM CURSOR ═══ -->
+  <div id="custom-cursor"></div>
+  <div id="custom-cursor-dot"></div>
+
+  <!-- ═══ ECHO LOGO (shown during experience) ═══ -->
+  <div id="echo-logo">
+    <span class="dot"></span>ECHO
+  </div>
+
+  <!-- ═══ ANALYSIS COUNTER (shown during experience) ═══ -->
+  <div id="analysis-counter">
+    ANALYZED: <span class="counter-value">0.0%</span>
+  </div>
+
+  <!-- ═══ LANDING PAGE ═══ -->
+  <div id="landing">
+    <div class="landing-badge">Neural Pattern Recognition</div>
+    <h1 class="landing-title">This AI already knows you.</h1>
+    <p class="landing-subtitle">No login. No data. Just behavior.</p>
+    <div class="landing-cta">
+      <button id="cta-button" aria-label="Start the ECHO experience">BEGIN</button>
+    </div>
+    <div class="landing-warning">Best experienced with sound · Desktop recommended</div>
+  </div>
+
+  <!-- ═══ EXPERIENCE CONTAINER ═══ -->
+  <div id="experience">
+    <div id="terminal" role="log" aria-live="polite"></div>
+  </div>
+
+  <!-- ═══ RESULT SCREEN ═══ -->
+  <div id="result">
+    <div class="result-card">
+      <div class="result-badge">ECHO ANALYSIS COMPLETE</div>
+      <div class="result-type">—</div>
+      <div class="result-description">—</div>
+      <div class="result-stats">
+        <div class="result-stat">
+          <div class="result-stat-value">—</div>
+          <div class="result-stat-label">Pixels Moved</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-stat-value">—</div>
+          <div class="result-stat-label">Interactions</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-stat-value">—</div>
+          <div class="result-stat-label">Duration</div>
+        </div>
+      </div>
+      <div class="result-actions">
+        <button id="share-btn" class="primary">SHARE YOUR RESULT</button>
+        <button id="retry-btn">EXPERIENCE AGAIN</button>
+      </div>
+      <div class="result-watermark">ECHO · Neural Pattern Recognition</div>
+    </div>
+  </div>
+
+  <!-- ═══ MAIN SCRIPT ═══ -->
+  <script src="app.js"></script>
+
+</body>
+</html>
